@@ -1,0 +1,128 @@
+# Notes on what I've learned so far:
+
+0: Navigating Terminal
+	python - opens python in terminal
+	CTRL-D (^D) gets out of python
+	mkdir - create a directory in terminal
+	cd - change directory in terminal
+	ls - list files within a certain directory
+
+1: Print
+	print - prints a string or variable output
+	'' or "" - indicates that text contain within is a string
+	# - called an octothorpe, hash, pound or mesh. It allows you to comment without affecting the script
+
+2: Comments and pound characters
+	# - comments - Will, you should use these more. Deliberate practice. C'mon, you know what's good for you.
+
+3: Numbers & Math
+	+ plus
+	- minus
+	/ divide
+	* multiply
+	% WHAT DOES THIS DO AGAIN?
+	< less-than
+	> greater-than
+	<= less-than or equal to - returns the answer to whether or not the figure on the left of the symbol is less than or equal to the figure on the right
+	>= greater-than or equal to - same as previous only reverse
+
+4: Variables and Names
+	Check this out. You can set Variables equal to values, functions, or other variables just by saying variable = WHATEVER
+	Then you can write strings with variables in them either by writing out separate strings and putting the variables in between separated by commas or by using the %d % (xyz) syntax
+
+5: More variables and printing
+	So remember that %d format I described above? Turns out it's called a "Format String"
+	%d - use this to return a signed integer decimal WHAT DOES THIS MEAN???
+	%s - use this to return a string
+	%r - use this to return 
+	%f - use for floating point decimal format. You havent really used this before, but it could be interesting.
+
+6: Strings and text
+	'String' - a bit of text you want to display or "export" out of the program you are writing
+	You can connect strings with +
+
+7: More Printing
+	You can also use * to print something multiple times in a row
+	You can print multiple strings on a single line if you end each line with a comma
+
+8: Printing, Printing
+	You defined a variable as a format string, then printed that variable several times with different definitions for each value in the format string
+
+9: "Printing," * 2 + "Printing"
+	\n - back-slash n - inserts a new line, even if written within a string. it's an escape sequence
+	""" """ - this format allows you to write whatever you want within an awesome string
+
+10: Escape Sequences
+	\t - inserts a tab
+	\\ - inserts a single backslash into a string
+	\" - allows you to insert double quotes even in a string bounded by double quotes
+
+11: Getting input
+	raw_input() - asks for input from the user
+	Using the comma at the end of a print question before putting in the raw_input allows user to enter input on same line as printed string
+
+12: Prompts
+	() - parenthesis characters
+	you can define variables as raw inputs
+	pydoc term - gives you the help article from terminal of the term in question
+	click q to quit python in terminal
+	
+13: Parameters, Unpacking, Variables
+	in the syntax "python ex13.py", the term ex13.py is the argument
+	argv allows you to import arguments (terms typed directly into terminal prior to running the script) into the script that runs
+	argv - the "argument variable" - holds the arguments you pass to your python script when you run it. 
+	"Unpacking" is where you give names to the various arguments being held by argv
+	Features = Modules
+
+14: I dont know
+
+15: Reading Files
+	open(filename) opens a file
+	then define that as a variable, say, 'txt'
+	txt = open(filename)
+	then you can do things to txt. like read that txt.
+	txt.read()
+	You can even mix and match with raw_inputs so you can ask for a file and have the user supply it in terminal
+	
+16: Reading and Writing Files
+	close - closes file
+	read - reads contents of the file
+	readline - reads just one line of text
+	truncate - empties the file. 
+	write(stuff) - writes stuff to the file
+
+17: More Files
+	'exists' module from os.path - wtf?
+	len(file) gives you the length of a file
+	exists(file) tells you whether or not a file exists
+	if you want to put a pause in a script to ask the user continue or not, print a line saying as much then put 'raw_input()' in the code. that gives the user the ability to opt out by doing CTRL-C to abort or to click ENTER to continue
+	open(file, 'w') - opens a file and makes it available for writing
+	txt.write(open_input_file_function) - this will write one file to another file
+	output.close() closes file
+	input.close() closes the other file. 
+	
+18: Names, Variables, Code Functions
+	Functions do three things:
+		1. They name pieces of code the way variables name strings and numbers
+		2. They take arguments the way your scripts take argv
+		3. Using 1 & 2 they let you make your own "mini scripts" or "tiny commands".
+	Example function:
+		def print_two(*args):
+			arg1, arg2 = args
+			print "arg1: %r, arg2: %r" % (arg1, arg2)
+	Then I would use that function like this in the script print_two(a, b)
+
+19: Functions and Files
+	f.seek(0) rewinds a file to the first line
+	f.readline() reads a line, moving the eye of the script forward, so if you do three consecutive "readline" commands, you will progress down a line with each function
+
+21: Functions can return things. Like if you run a function and say "return a*b", then you can say VARIABLE = FUNCTION(a, b) and VARIABLE will become equal to whatever you returned from that function
+	
+	
+	
+	
+	
+	
+	
+	
+	
